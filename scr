@@ -1,0 +1,3 @@
+#!/bin/bash
+emacs -nw ~/scripts/$1
+chmod +x ~/scripts/$1

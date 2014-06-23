@@ -1,0 +1,2 @@
+#!/bin/bash
+scp -o 'ControlPath=/tmp/%L-%r@%h:%p' $@

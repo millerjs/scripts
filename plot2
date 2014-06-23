@@ -1,0 +1,3 @@
+#!/bin/bash
+echo $@
+epd_python ~/scripts/plot2D.py $@

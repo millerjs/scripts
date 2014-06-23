@@ -1,0 +1,5 @@
+user=$1
+remote=$2
+mountpoint=$3
+
+sshfs -o idmap=user $user@$remote:/home/$user/  $mountpoint

@@ -1,0 +1,5 @@
+while [  0 -lt 10 ]; do
+      cp ~/Public/Templates/LaTex-Preamble.tex ./zLaTex-Preamble.tex
+      pdflatex *.tex
+      read
+done

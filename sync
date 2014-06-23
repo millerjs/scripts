@@ -1,0 +1,12 @@
+#!/bin/bash
+
+host="$1"
+input="$2"
+
+echo Syncing $input from $host
+
+while :
+do
+    rsync -r "$host":"$input" ~/sync/
+    sleep .5
+done

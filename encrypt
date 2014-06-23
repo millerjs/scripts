@@ -1,0 +1,3 @@
+#!/bin/bash
+
+openssl enc $2 -aes-256-cbc -in $1

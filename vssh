@@ -1,0 +1,6 @@
+#!/bin/bash
+
+vm=$1
+IP=`grep $vm ~/.ssh/vms | head -n1 | cut -f2 -d" "`
+echo "Creating ssh connection to vm $vm [$IP]"
+ssh $IP

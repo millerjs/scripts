@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo  "$@" | mutt -s "server_msg" 8157910665@vtext.com

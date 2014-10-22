@@ -1,0 +1,15 @@
+#!/bin/bash
+echo bootstrapping to $1...
+
+STRAPS="
+.emacs.d
+.bashrc
+scripts
+"
+
+for f in `cat ~/.bootstrap`
+do 
+    scp -r ~/$f $1:
+done
+
+ssh $1 "cd .emacs.d; make clean; make"

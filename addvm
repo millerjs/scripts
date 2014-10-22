@@ -1,0 +1,5 @@
+#!/bin/bash
+
+VM=$1
+IP=$2
+printf "\n$VM $IP" >> ~/.ssh/vms
